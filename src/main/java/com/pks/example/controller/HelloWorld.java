@@ -17,4 +17,9 @@ public class HelloWorld {
     public String sayHello(){
         return helloWorldComponent.sayHello();
     }
+
+    @GetMapping({"/yaml"})
+    public String sayHelloFromYaml(){
+        return helloWorldComponent.sayHelloFromYaml();
+    }
 }

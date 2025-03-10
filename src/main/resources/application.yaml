@@ -1,0 +1,5 @@
+custom:
+  yaml:
+    message: Hello world from custom property yaml
+
+
