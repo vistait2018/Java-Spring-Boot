@@ -21,6 +21,9 @@ public class HelloWorldComponent {
   @Autowired
   private ConfigPrefix configPrefix;
 
+  @Autowired
+  private DbComponent dbComponent;
+
 
   public String sayHello(){
 
@@ -28,6 +31,7 @@ public class HelloWorldComponent {
      log.error("Error Logs");
       log.trace("Error Logs");
       log.debug("Error Logs");
+      dbComponent.performDbComponent();
     return message;
 //      return "Hello world for "+ configPrefix.getFirstName() + " "+
 //              configPrefix.getLastName() +" custom Property";
